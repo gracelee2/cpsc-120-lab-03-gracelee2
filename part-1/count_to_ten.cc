@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
   const int kCounterMax = 10;
   cout << "With a for loop\n";
 
-  for (int for_counter = 0; for_counter <kCounterMax; for_counter++) {
+  for (int for_counter = 0; for_counter < kCounterMax; for_counter++) {
     cout << for_counter << "\n";
   }
 
