@@ -17,19 +17,17 @@ int main(int argc, char const *argv[]) {
 const int kCounterMax = 22;
   // TODO: Write an outer loop which starts from 0 and goes up to the counter
   // max.
-for(int for_counter = kCounterMax; for_counter >=1; for_counter--){
-  for(int second_counter = kCounterMax- for_counter; second_counter > 0; second_counter--){
+for(int for_counter = 0; for_counter < kCounterMax; for_counter++){
+
+  for(int second_counter = 0; second_counter < for_counter; second_counter++){
     cout << "*";
   }
-for(int third_counter = for_counter; third_counter>0;third_counter--){
+for(int third_counter = for_counter; third_counter< kCounterMax;third_counter++){
   cout << "|";
 }
 cout << endl;
 
   }
-  //for(int third_counter = 0; third_counter < for_counter; third_counter++){
-
-  //}
 
   // TODO: Write an inner loop which starts from the current line number and
   // counts down to zero. Make sure that this loop is inside the outer loop.
